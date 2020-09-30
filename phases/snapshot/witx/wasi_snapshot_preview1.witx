@@ -537,7 +537,7 @@
 
   ;;; Cacheline flush.
   (@interface func (export "clflush")
-    (param $addr)
+    (param $addr (@witx pointer u8))
     (result $error $errno)
   )
 )
