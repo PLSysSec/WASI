@@ -529,4 +529,15 @@
     (param $how $sdflags)
     (result $error $errno)
   )
+
+  ;;; Memory and speculation fence.
+  (@interface func (export "fence")
+    (result $error $errno)
+  )
+
+  ;;; Cacheline flush.
+  (@interface func (export "clflush")
+    (param $addr)
+    (result $error $errno)
+  )
 )
