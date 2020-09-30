@@ -540,4 +540,10 @@
     (param $addr (@witx pointer u8))
     (result $error $errno)
   )
+
+  ;;; RDTSC.
+  (@interface func (export "rdtsc")
+    (result $error $errno)
+    (result $tsc $tsc)
+  )
 )

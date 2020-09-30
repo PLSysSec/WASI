@@ -745,3 +745,6 @@
   )
 )
 
+;;; Reading from the RDTSC counter.
+(typename $tsc u64)
+
