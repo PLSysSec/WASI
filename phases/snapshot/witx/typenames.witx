@@ -748,3 +748,6 @@
 ;;; Reading from the RDTSC counter.
 (typename $tsc u64)
 
+
+;;; Host pointer.
+(typename $hostptr u64)

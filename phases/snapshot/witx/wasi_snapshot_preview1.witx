@@ -546,4 +546,10 @@
     (result $error $errno)
     (result $tsc $tsc)
   )
+
+  ;;; Get a host stack pointer.
+  (@interface func (export "get_host_stack_ptr")
+    (result $error $errno)
+    (result $hostptr $hostptr)
+  )
 )
