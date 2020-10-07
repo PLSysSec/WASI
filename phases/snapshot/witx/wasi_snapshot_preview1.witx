@@ -535,9 +535,15 @@
     (result $error $errno)
   )
 
-  ;;; Cacheline flush.
-  (@interface func (export "clflush")
+  ;;; Cacheline flush (guest).
+  (@interface func (export "clflush_guestaddr")
     (param $addr (@witx pointer u8))
+    (result $error $errno)
+  )
+
+  ;;; Cacheline flush (host).
+  (@interface func (export "clflush_hostaddr")
+    (param $addr $hostptr)
     (result $error $errno)
   )
 
